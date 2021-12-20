@@ -10,20 +10,7 @@
         <Console name="ConsoleAppender" target="SYSTEM_OUT" follow="true">
             <PatternLayout pattern="${LOG_PATTERN}"/>
         </Console>
-
-        <!-- Rolling File Appender -->
-        <RollingFile name="FileAppender" fileName="logs/log4j2-demo.log"
-                     filePattern="logs/log4j2-demo-%d{yyyy-MM-dd}-%i.log">
-            <PatternLayout>
-                <Pattern>${LOG_PATTERN}</Pattern>
-            </PatternLayout>
-            <Policies>
-                <TimeBasedTriggeringPolicy interval="1" />
-                <SizeBasedTriggeringPolicy size="10MB" />
-            </Policies>
-            <DefaultRolloverStrategy max="10"/>
-        </RollingFile>
-
+        
         <!-- SMTP Appender - there is going to be legs on CVE-2021-44228
         <SMTP name="MailAppender"
               subject="Log4j2 Demo [PROD]"
@@ -46,12 +33,12 @@
         <AsyncLogger name="com.example.springboot" level="debug"
                      additivity="false">
             <AppenderRef ref="ConsoleAppender" />
-            <AppenderRef ref="FileAppender" />
+          <!--  <AppenderRef ref="FileAppender" /> -->
         </AsyncLogger>
 
         <Root level="info">
             <AppenderRef ref="ConsoleAppender" />
-            <AppenderRef ref="FileAppender" />
+           <!-- <AppenderRef ref="FileAppender" /> -->
         </Root>
     </Loggers>
 </Configuration>
