@@ -8,5 +8,6 @@
 This is a fork of the spring-boot demo for log4j testing
 log4j/log4shell learning/researching
 
+used the docker vulnerable-app and the boot-spring maven demo.
 
 CVE-2021-44228
