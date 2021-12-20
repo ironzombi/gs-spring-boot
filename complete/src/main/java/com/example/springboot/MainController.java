@@ -12,7 +12,7 @@ import org.apache.logging.log4j.Logger;
 public class MainController {
 
     private static final Logger logger = LogManager.getLogger("Log4Shell_logshock");
-
+    /* fromthe docker vulnerable-app */
     @GetMapping("/")
     public String index(@RequestHeader("X-Api-Version") String apiVersion) {
         logger.info("Received a request for API version " + apiVersion);
