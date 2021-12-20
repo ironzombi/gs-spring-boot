@@ -10,4 +10,11 @@ log4j/log4shell learning/researching
 
 used the docker vulnerable-app and the boot-spring maven demo.
 
+
+use Maven
+cd complete/
+
+./mvn spring-boot:run
+
+
 CVE-2021-44228
