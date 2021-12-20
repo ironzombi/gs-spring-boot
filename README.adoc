@@ -18,3 +18,7 @@ cd complete/
 
 
 CVE-2021-44228
+
+
+
+I know zero java
