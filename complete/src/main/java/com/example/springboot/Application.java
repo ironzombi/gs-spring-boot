@@ -17,7 +17,7 @@ public class Application implements ApplicationRunner {
 
     @Override
     public void run(ApplicationArguments applicationArguments) throws Exception {
-        logger.debug("...........................Log4Shell Vulnerable Server..........................");
+        logger.debug("Log4Shell Vulnerable Server");
         logger.info("a Maven Spring boot app(?)");
         logger.warn("listens on port 8080");
 		logger.info("pass X-Api-Version");
